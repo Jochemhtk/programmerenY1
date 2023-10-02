@@ -1,8 +1,7 @@
-var A = 1;
-var B = 1;
+var range = 50;
+var number = 1;
 
-while (B < 51) {
-    console.log(A * B)
-    A++;
-    B++;
+for(let i = 1; i <= range; i++) {
+    const result = i * number;
+    console.log(`${number} * ${i} = ${result}`);
 }
