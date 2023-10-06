@@ -1,13 +1,12 @@
-let n = 5;
+function factoriaal(num) {
+	if (num === 0 || num === 1)
+	  return 1;
+	for (var i = num - 1; i >= 1; i--) {
+	  num *= i;
+	}
+	return num;
+  }
 
-function factorial(n) {
-	let ans = 1;
-	
-	if(n === 0)
-		return 1;
-	for (let i = 2; i <= n; i++)
-		ans = ans * i;
-	return ans;
-}
 
-console.log(factorial(n));
+let result = factoriaal(5);
+console.log(result);
